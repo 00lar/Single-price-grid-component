@@ -1,0 +1,181 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: hsl(204deg, 43%, 93%);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 107%;
+  }
+  main .grid-card {
+    min-height: auto;
+    -ms-grid-columns: (minmax(250px, 340px))[2];
+    grid-template-columns: repeat(2, minmax(250px, 340px));
+    -ms-grid-rows: (260px)[2];
+    grid-template-rows: repeat(2, 260px);
+  }
+  main .grid-card > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  main .grid-card > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  main .grid-card > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  main .grid-card > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  main .grid-card .community-container {
+    -ms-grid-column-span: 2;
+    grid-column: 2 span;
+    padding: 40px;
+  }
+  main .grid-card .community-container .community-days {
+    color: hsl(71deg, 73%, 54%);
+  }
+  main .grid-card .community-days {
+    color: hsl(71deg, 73%, 54%);
+    padding: 18px 0;
+  }
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .grid-card {
+  max-width: 80%;
+  min-height: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(250px, 340px);
+  grid-template-columns: minmax(250px, 340px);
+  -ms-grid-rows: (1fr)[3];
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0 auto;
+}
+main .grid-card > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+main .grid-card > *:nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+main .grid-card > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+main .grid-card .community-container {
+  padding: 1.25rem;
+  background-color: #ffffff;
+}
+main .grid-card .community-container h1 {
+  font-size: 1.25rem;
+  color: hsl(179deg, 62%, 43%);
+}
+main .grid-card .community-container .community-days {
+  color: hsl(71deg, 73%, 54%);
+  padding: 1.125rem 0;
+  font-weight: 700;
+}
+main .grid-card .community-container .community-description {
+  font-size: 0.9375rem;
+  color: hsl(218deg, 22%, 67%);
+  font-weight: 400;
+}
+main .grid-card .suscription-container {
+  padding: 1.25rem;
+  background-color: #2bb3b1;
+}
+main .grid-card .suscription-container h1 {
+  font-size: 1.25rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+}
+main .grid-card .suscription-container .price--month {
+  color: #6fd5d9;
+}
+main .grid-card .suscription-container .price--month span {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-right: 10px;
+  color: white;
+}
+main .grid-card .suscription-container .price-access {
+  color: white;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+}
+main .grid-card .suscription-container button {
+  width: 100%;
+  max-width: 290px;
+  height: 55px;
+  border: 0;
+  background-color: hsl(71deg, 73%, 54%);
+}
+main .grid-card .suscription-container button a {
+  text-decoration: none;
+  color: white;
+}
+main .grid-card .us-container {
+  padding: 1.25rem;
+  background-color: #4abebd;
+}
+main .grid-card .us-container h1 {
+  font-size: 1.25rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+main .grid-card .us-container p {
+  padding-top: 0.9375rem;
+  font-size: 0.875rem;
+  color: hsl(204deg, 43%, 93%);
+}

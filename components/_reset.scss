@@ -1,0 +1,40 @@
+$cyan:hsl(179, 62%, 43%);
+$yellow:hsl(71, 73%, 54%);
+$gray:hsl(204, 43%, 93%);
+$blue:hsl(218, 22%, 67%);
+$cuad-1:#ffffff;
+$cuad-2:#2bb3b1;
+$cuad-3:#4abebd;
+$fuente1:'Karla', sans-serif;
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    font-family: $fuente1;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: $gray;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }

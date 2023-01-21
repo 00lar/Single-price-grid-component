@@ -1,0 +1,25 @@
+@media (min-width:1440px) {
+    html {
+        font-size: 107%;
+    }
+    main {
+        .grid-card {
+            min-height: auto;
+            grid-template-columns: repeat(2, minmax(250px, 340px));
+            grid-template-rows: repeat(2, 260px);
+            .community-container {
+                grid-column: 2 span;
+                padding: 40px;
+                .community-days {
+                    color: $yellow;
+                }
+            }
+                .community-days {
+                    color: $yellow;
+                    padding: 18px 0;
+                }
+            
+        }
+    }
+    
+}

@@ -1,0 +1,90 @@
+@import "components/reset";
+@import "components/media-queries";
+
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .grid-card {
+        max-width: 80%;
+        min-height: 80%;
+        display: grid;
+        grid-template-columns: minmax(250px, 340px);
+        grid-template-rows: repeat(3, 1fr);
+        margin: 0 auto;
+        
+        .community-container {
+            padding: 1.25rem;
+            background-color: $cuad-1;
+            h1 {
+                font-size: 1.25rem;
+                color: $cyan;
+            }
+            .community-days {
+                color: $yellow;
+                padding: 1.125rem 0;
+                font-weight: 700;
+            }
+            .community-description {
+                font-size: 0.9375rem;
+                color: $blue;
+                font-weight: 400;
+            }
+
+        }
+        .suscription-container {
+            padding: 1.25rem;
+            background-color: $cuad-2;
+            h1 {
+                font-size: 1.25rem;
+                color: $cuad-1;
+                font-weight: 700;
+                margin-bottom: 0.625rem;
+            }
+            .price--month {
+                color: #6fd5d9;
+                span {
+                    font-size: 1.875rem;
+                    font-weight: 700;
+                    margin-right: 10px;
+                    color: white;
+                }
+            }
+            .price-access {
+                color: white;
+                margin-bottom: 2.5rem;
+                font-weight: 400;
+            }
+            button {
+                width: 100%;
+                max-width: 290px;
+                height: 55px;
+                border: 0;
+                background-color: $yellow;
+                a {
+                    text-decoration: none;
+                    color: white;
+                
+                }
+            }
+            
+        }
+        .us-container {
+            padding: 1.25rem;
+            background-color: $cuad-3;
+            h1 {
+                font-size: 1.25rem;
+                color: $cuad-1;
+                font-weight: 700;
+            }
+            p {
+                padding-top: 0.9375rem;
+                font-size: 0.875rem;
+                color: $gray;
+            }
+        }
+    }
+}
+
