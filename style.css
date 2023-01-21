@@ -39,46 +39,6 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-@media (min-width: 1440px) {
-  html {
-    font-size: 107%;
-  }
-  main .grid-card {
-    min-height: auto;
-    -ms-grid-columns: (minmax(250px, 340px))[2];
-    grid-template-columns: repeat(2, minmax(250px, 340px));
-    -ms-grid-rows: (260px)[2];
-    grid-template-rows: repeat(2, 260px);
-  }
-  main .grid-card > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  main .grid-card > *:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  main .grid-card > *:nth-child(3) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-  main .grid-card > *:nth-child(4) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-  }
-  main .grid-card .community-container {
-    -ms-grid-column-span: 2;
-    grid-column: 2 span;
-    padding: 40px;
-  }
-  main .grid-card .community-container .community-days {
-    color: hsl(71deg, 73%, 54%);
-  }
-  main .grid-card .community-days {
-    color: hsl(71deg, 73%, 54%);
-    padding: 18px 0;
-  }
-}
 main {
   width: 100vw;
   height: 100vh;
@@ -178,4 +138,45 @@ main .grid-card .us-container p {
   padding-top: 0.9375rem;
   font-size: 0.875rem;
   color: hsl(204deg, 43%, 93%);
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 107%;
+  }
+  main .grid-card {
+    min-height: auto;
+    -ms-grid-columns: (minmax(250px, 340px))[2];
+    grid-template-columns: repeat(2, minmax(250px, 340px));
+    -ms-grid-rows: (260px)[2];
+    grid-template-rows: repeat(2, 260px);
+  }
+  main .grid-card > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  main .grid-card > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  main .grid-card > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  main .grid-card > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  main .grid-card .community-container {
+    -ms-grid-column-span: 2;
+    grid-column: 2 span;
+    padding: 40px;
+  }
+  main .grid-card .community-container .community-days {
+    color: hsl(71deg, 73%, 54%);
+  }
+  main .grid-card .community-days {
+    color: hsl(71deg, 73%, 54%);
+    padding: 18px 0;
+  }
 }
